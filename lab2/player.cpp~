@@ -1,0 +1,53 @@
+#include "player.h"
+#include <cassert>
+#include <cstdlib>
+
+
+TennisPlayer::TennisPlayer(){
+	firstName = "Margaret";
+	lastName = "Iwobi";
+	country = "America";
+	ranking = 5;
+	pointTotal = 100;
+}
+
+TennisPlayer::TennisPlayer(string myfirstName, string mylastName, int myranking, int mypointTotal, string mycountry){
+	firstame = myfirstName
+	lastName = mylastName;
+	raking = myranking;
+	pointTotal = mypointTotal;
+	country = mycountry;
+}
+
+string TennisPlayer::getFirstName(){
+	return firstName;
+
+}
+
+sring TennisPlayer::getLastName(){
+	return lastName;
+}
+
+string TennisPlayer::getCountry(){
+	return country;
+}
+int TennisPlayer::getRanking(){
+	return ranking;
+}
+int TennisPlayer::getpointTotal(){
+	return pointTotal;
+}
+void TennisPlayer::setRanking(int ranking){
+	this->ranking = ranking;
+}
+void TennisPlayer::setPoint(int pointTotal){
+	this->pointTotal = pointTotal;
+}
+
+ostream & operator<< (ostream & out, const TennisPlayer & t){
+	out<< t.firstName << " "<< t.lastName <<" "<< t.country <<" "<< t.ranking <<" "<< t.totalPoint << endl;
+	return out;
+}
+		
+
+

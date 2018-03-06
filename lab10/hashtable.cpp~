@@ -1,0 +1,38 @@
+#include "hashtable.h"
+#include<algorithm>
+
+using namespace std;
+
+SetHT::SetHT(int tsize, hashFunc func){
+
+	this->tsize = tsize;
+	hash = func;
+	hashTable.resize(tsize);
+	size = 0;
+
+
+
+}
+
+void SetHT::addItem(const ItemType & item){
+
+		
+	int homeaddress = hash(item,tsize);
+	int counter = 0;
+
+	list<ItemType> insidelist = hashTable[homeaddress];
+	list<ItemType>::iterator iter = find(insidelist.begin(), insidelist.end(), item);
+	
+	if(iter == insidelist.end()){
+		hashTable[homeaddress].push_back(item);
+		size++;
+	}
+	
+}
+
+double SetHT::loadFactor()const {
+	
+	return (double) size/tsize;
+	
+	
+}

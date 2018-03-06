@@ -1,0 +1,20 @@
+Novak Djokovic 16790 Serbia
+Andy Murray 8945 Great Britain
+Roger Federer 8795 Switzerland
+Stan Wawrinka 6325 Switzerland
+Rafael Nadal 4880 Spain
+David Ferrer 4325 Spain
+Kei Nishikori 4235 Japan
+Tomas Berdych 4200 Czech Republic
+Jo-Wilfred Tsonga 2905 France
+Richard Gasquet 2760 France
+Milos Raonic 2630 Canada
+John Isner 2585 United States
+Marin Cilic 2495 Croatia
+Kevin Anderson 2305 South Africa
+Gilles Simon 2235 France
+David Goffin 1970 Belgium
+Gael Monfils 1800 France
+Roberto Bautista_Agut 1775 Spain
+Dominic Thiem 1725 Austria
+Bernard Tomic 1720 Australia

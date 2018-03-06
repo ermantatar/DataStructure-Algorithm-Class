@@ -1,0 +1,64 @@
+Name: Erman Sahin Tatar
+
+CS-220 Spring 2016 Lab 02 Report Due Friday, Feb. 12, 2016
+
+1. Copy a version of your working "factorial" function here: (Whatever data type you currently are using is OK)
+
+#include<stdio.h>
+#include<math.h>
+ 
+float factorial(float n);
+
+int main(int argv,char **argc) {
+
+	float n,fn;
+
+	for(fn=n=1; fn>0 && fn != INFINITY; n++) {
+		fn=factorial(n);
+		printf("factorial(%f)=%f\n",n,fn);
+	}
+	return(0);
+
+}
+float factorial(float n) {
+	
+	if (n<=0 || n == 0){
+		return 1;
+	}
+	else{
+		return n* factorial(n-1);
+	}
+
+	return 0;
+}
+
+//factorial 13! max float returning correct value = 6227020800
+
+2. What is the largest number that you can use to compute a correct factorial using "char" as the returned value?  Why?
+
+***factorial(5)= 120 because char is just 1 byte, new result factorial(6) will be overflow and wont be correct! (127) + 1 + -128
+
+
+3. What is the largest number that you can use to compute a correct factorial using "unsigned char" as the returned value?
+	Is this different from signed char?  If not, why not?  If so, why?
+
+***Largest unsigned character is 255! if we want to add +1 to 255 it will go back -256 , we will get to be final value factorial(5) = 120
+***of course it is different than signed char max value is +127 but unsigned char max value is 255.
+
+	
+4. What type of integer data allows factorial to return the largest correct result?  
+	What is the largest argument for which factorial returns a correct result using this type?
+
+*** Unsigned long long int returns largest value of int.  factorial(20)=2432902008176640000 is the final correct value.
+
+
+5. What is the largest value for which this program can compute an exact and correct result?
+	What type of data produces this largest value?
+
+*** Long double we can keep the most value inside it. ull int can show finally fact(20) correct but long double can show fact(25) correct
+
+fact(25) is 15511210043330985984000000.  
+
+
+
+

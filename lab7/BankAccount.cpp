@@ -1,0 +1,45 @@
+// BankAccount.cpp
+
+#include "BankAccount.h"
+
+BankAccount::BankAccount(){
+	name = "anonymous";
+	balance = 0;
+}
+
+BankAccount::BankAccount(string nameIn, double balanceIn){
+	name = nameIn;
+	balance = balanceIn;
+}
+
+void BankAccount::deposit (double amount){
+	balance += amount;
+}
+
+void BankAccount::withdraw (double amount){
+	balance -= amount;
+}
+
+string BankAccount::getName () const{
+	return name;
+}
+
+double BankAccount::getBalance () const{
+	return balance;
+}
+
+ostream& operator<<(ostream & out, const BankAccount & b){
+	out << b.name << "   " << b.balance << endl;
+}
+
+bool operator<(const BankAccount & bankObject, const BankAccount & bankObject2){
+	
+	if(bankObject.balance < bankObject2.balance){
+		return true;
+	}else
+		return false;
+}
+
+
+//----> DEFINE operator< HERE
+

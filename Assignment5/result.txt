@@ -1,0 +1,8 @@
+The postfix of  23 * 4 + ( 19 - 2 ) # is  =  
+ >>>>  23 4 * 19 2 - + The answer of the line is =  109
+The postfix of  6 - 3 # is  =  
+ >>>>  6 3 - The answer of the line is =  3
+The postfix of  36 # is  =  
+ >>>>  36 The answer of the line is =  36
+The postfix of   # is  =  
+ >>>>   The answer of the line is =  36
